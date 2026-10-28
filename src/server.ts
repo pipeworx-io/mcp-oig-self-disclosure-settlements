@@ -11,7 +11,7 @@ import * as bakedIndexModule from './sdp-index-data.js';
 const bakedIndex = Object.fromEntries(Object.entries(bakedIndexModule));
 
 const server = new Server(
-  { name: '@pipeworx/mcp-oig-self-disclosure-settlements', version: '0.1.0' },
+  { name: '@pipeworx/mcp-oig-self-disclosure-settlements', version: '0.1.1' },
   { capabilities: { tools: {} } },
 );
 

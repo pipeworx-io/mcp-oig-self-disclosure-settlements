@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-oig-self-disclosure-settlements",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "HHS-OIG Self-Disclosure Protocol settlements — fleet #3274.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-0e2c732046c1e7ca66b5b0f72862c7b7715f127b9d4fc5e735a5799cce57fe9b",
-    "sourceCommit": "0f33463aa47677f38e4f177a4b4a7160dd80819f"
+    "sourceHash": "v1-00a507a2693cda952e7d7f35b7a977f373fdf2a297c39fe9fe06ee07b3a40db6",
+    "sourceCommit": "f54ad77e789f27fe393978f9c080b5b18c87bb4f"
   }
 }
