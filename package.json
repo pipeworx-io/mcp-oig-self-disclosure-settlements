@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-oig-self-disclosure-settlements",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "HHS-OIG Self-Disclosure Protocol settlements — fleet #3274.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-oig-self-disclosure-settlements": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "oig-self-disclosure-settlements"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-oig-self-disclosure-settlements.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/oig-self-disclosure-settlements",
   "pipeworx": {
-    "sourceHash": "v1-00a507a2693cda952e7d7f35b7a977f373fdf2a297c39fe9fe06ee07b3a40db6",
-    "sourceCommit": "f54ad77e789f27fe393978f9c080b5b18c87bb4f"
+    "mode": "gateway",
+    "slug": "oig-self-disclosure-settlements",
+    "gatewaySlug": "oig-self-disclosure-settlements",
+    "sourceHash": "v1-009d11ef79caae6be5fb03c70d7a40950a7bccb94572f00173bfc84cb17cb444",
+    "sourceCommit": "b2c4383545bb35171d0ada2beb1c9c7168ea175e"
   }
 }
